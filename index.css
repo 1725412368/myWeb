@@ -71,7 +71,7 @@ img {
 
 #head .headMain {
     width: 1100px;
-    height: 80px;
+    height: 100px;
     /* background-color: pink; */
     margin: 0 auto;
     position: relative;
@@ -94,7 +94,7 @@ img {
 }
 
 #head .headMain>.nav>.list>li .up {
-    color: red;
+    color: white;
     position: absolute;
     width: 0;
     overflow: hidden;
@@ -108,7 +108,7 @@ img {
 #head .headMain>.arrow {
     width: 40px;
     height: 3px;
-    background: red;
+    background: white;
     position: absolute;
     left: 50%;
     bottom: 0px;
@@ -155,7 +155,7 @@ img {
 /* 第一屏 */
 
 #content>.list>.home {
-    background: url() no-repeat;
+    background: url(../img/0.jpg) no-repeat;
 }
 
 #content>.list>.home .home1 {
@@ -167,14 +167,24 @@ img {
 }
 
 #content>.list>.home .home1>li {
-    width: 100%;
-    height: 100%;
+    width: 1100px;
+    height: 520px;
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     visibility: hidden;
+}
+
+#content>.list>.home .home1>li>a {
+    width: 1100px;
+    height: 520px;
+}
+
+#content>.list>.home .home1>li>a>img {
+    width: 100%;
+    height: 100%;
 }
 
 #content>.list>.home .home1>li:nth-child(1) {
@@ -193,11 +203,12 @@ img {
     background-color: #000;
 }
 
-#content>.list>.home .home1>li>div {
+
+/* #content>.list>.home .home1>li>div {
     color: white;
     text-align: center;
     margin-top: 200px;
-}
+} */
 
 #content>.list>.home .home1>li.active {
     visibility: visible;
@@ -319,19 +330,19 @@ img {
 }
 
 #content>.list>.course .course3 {
-    width: 480px;
+    width: 600px;
     background-color: violet;
     position: absolute;
     z-index: 2;
-    right: 50px;
-    top: 70px;
+    right: 0px;
+    top: -50px;
 }
 
 #content>.list>.course .course3 .item {
     float: left;
     width: 120px;
-    height: 132px;
-    background-color: teal;
+    height: 120px;
+    /* background-color: teal; */
     position: relative;
     perspective: 500px;
     transform: preserve-3d;
@@ -351,19 +362,20 @@ img {
 }
 
 #content>.list>.course .course3 .item .backFace {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     background-image: url() no-repeat;
     background-position: 50% 50%;
 }
 
 #content>.list>.course .course3 .item:nth-of-type(1) .backFace {
-    background-color: blueviolet;
-    background-image: url() no-repeat;
+    /* background-color: red; */
+    /* background-image: url(../img/LeeSin.png) no-repeat; */
+    background: url(../img/LeeSin.png);
 }
 
 #content>.list>.course .course3 .item:nth-of-type(2) .backFace {
-    background-color: blueviolet;
-    background-image: url() no-repeat;
+    /* background-color: blueviolet; */
+    background: url(../img/Lucian.png) no-repeat;
 }
 
 #content>.list>.course .course3 .item:nth-of-type(3) .backFace {
@@ -416,6 +428,71 @@ img {
     background-image: url() no-repeat;
 }
 
+#content>.list>.course .course3 .item:nth-of-type(13) .backFace {
+    background-color: blueviolet;
+    background-image: url() no-repeat;
+}
+
+#content>.list>.course .course3 .item:nth-of-type(14) .backFace {
+    background-color: blueviolet;
+    background-image: url() no-repeat;
+}
+
+#content>.list>.course .course3 .item:nth-of-type(15) .backFace {
+    background-color: blueviolet;
+    background-image: url() no-repeat;
+}
+
+#content>.list>.course .course3 .item:nth-of-type(16) .backFace {
+    /* background-color: blueviolet; */
+    background: url(../img/Kaisa.png) no-repeat;
+}
+
+#content>.list>.course .course3 .item:nth-of-type(17) .backFace {
+    background-color: blueviolet;
+    background-image: url() no-repeat;
+}
+
+#content>.list>.course .course3 .item:nth-of-type(18) .backFace {
+    background-color: blueviolet;
+    background-image: url() no-repeat;
+}
+
+#content>.list>.course .course3 .item:nth-of-type(19) .backFace {
+    background-color: blueviolet;
+    background-image: url() no-repeat;
+}
+
+#content>.list>.course .course3 .item:nth-of-type(20) .backFace {
+    /* background-color: blueviolet; */
+    background: url(../img/Nautilus.png) no-repeat;
+}
+
+#content>.list>.course .course3 .item:nth-of-type(21) .backFace {
+    /* background-color: blueviolet; */
+    background-image: url(../img/Nautilus.png) no-repeat;
+}
+
+#content>.list>.course .course3 .item:nth-of-type(22) .backFace {
+    background-color: blueviolet;
+    background-image: url() no-repeat;
+}
+
+#content>.list>.course .course3 .item:nth-of-type(23) .backFace {
+    background-color: blueviolet;
+    background-image: url() no-repeat;
+}
+
+#content>.list>.course .course3 .item:nth-of-type(24) .backFace {
+    background-color: blueviolet;
+    background-image: url() no-repeat;
+}
+
+#content>.list>.course .course3 .item:nth-of-type(25) .backFace {
+    background-color: blueviolet;
+    background-image: url() no-repeat;
+}
+
 #content>.list>.course .course3 .item .face {
     transform: rotateY(180deg);
     backface-visibility: hidden;
@@ -434,7 +511,7 @@ img {
 #content>.list>.course .course3 .line {
     top: -7px;
     width: 9px;
-    height: 410px;
+    height: 614px;
     background-color: white;
     position: absolute;
     background-image: url() no-repeat;
